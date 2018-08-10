@@ -1499,6 +1499,10 @@ div#MPFooterLink {
     padding: 7px 35px;
     margin-top: 25px; }
 
+/* BIOS */
+.tl-bios h3 {
+  clear: both; }
+
 /*===USING THE BLOG WIDGET TO HANDLE CHAPTER NEWS ====*/
 .tl-blog ul {
   display: flex;
