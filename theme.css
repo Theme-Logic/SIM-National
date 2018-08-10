@@ -1500,8 +1500,16 @@ div#MPFooterLink {
     margin-top: 25px; }
 
 /* BIOS */
-.tl-bios h3 {
-  clear: both; }
+.tl-bios h3:before {
+  content: "";
+  display: block;
+  clear: both;
+  padding-top: 25px;
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 25px; }
+.tl-bios h4 {
+  padding-bottom: 0px;
+  margin-bottom: 25px; }
 
 /*===USING THE BLOG WIDGET TO HANDLE CHAPTER NEWS ====*/
 .tl-blog ul {
