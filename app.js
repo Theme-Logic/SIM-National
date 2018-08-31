@@ -234,7 +234,7 @@ function initBlogImg() {
                             ,'simnet.org'];
     if ($.inArray(domain, domainArray) != -1) {
         $('.tl-blog li h3 a').each(function () {
-            var tlBlogLink = (this).href + ' .blogs-block img:first';
+            var tlBlogLink = $(this).attr("href") + ' .blogs-block img:first';
             $(this).closest('.title-row').before('<div class="row tlBlogImg" />');
             $(this).closest('.title-row').prev().load(tlBlogLink, function () {
                 $('.tlBlogImg img').removeAttr('style data-mce-hlselector data-mce-hlimagekey data-skipsetcontent width height').addClass('tl-blog-img');
