@@ -4,8 +4,8 @@ function setHeader(headerTheme) {
         case 1:
             $("#NAV").insertAfter(".headrow");
             $(".HLWelcomeHeader").closest(".inline").addClass("search-sign-up-wrapper");
-            $("a.level1.MPAuxNav.static[href*='contact']").insertBefore("#MPSearchBlock");
-            $("#searchColumn").removeClass("pull-right").insertAfter(".HLWelcomeHeader");
+            //$("a.level1.MPAuxNav.static[href*='contact']").insertBefore("#MPSearchBlock");
+            //$("#searchColumn").removeClass("pull-right").insertAfter(".HLWelcomeHeader");
             break;
         case 2:
             $("#NAV").insertAfter(".headrow");
