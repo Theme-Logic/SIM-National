@@ -4,8 +4,8 @@ function setHeader(headerTheme) {
         case 1:
             $("#NAV").insertAfter(".headrow");
             $(".HLWelcomeHeader").closest(".inline").addClass("search-sign-up-wrapper");
-            //$("a.level1.MPAuxNav.static[href*='contact']").insertBefore("#MPSearchBlock");
-            //$("#searchColumn").removeClass("pull-right").insertAfter(".HLWelcomeHeader");
+            $("a.level1.MPAuxNav.static[href*='contact']").insertBefore("#MPSearchBlock");
+            $("#searchColumn").removeClass("pull-right").insertAfter(".HLWelcomeHeader");
             break;
         case 2:
             $("#NAV").insertAfter(".headrow");
@@ -190,7 +190,7 @@ $(document).ready(function () {
     }
     $("#MPOuterHeader .col-md-12:first").wrap("<div class='row row-wide clearfix headrow'></div>");
     $("#NAV").insertAfter("#Logo");
-    //$("a.level1.MPAuxNav.static[href*='sim-national']").insertBefore("#MPSearchBlock");
+    $("a.level1.MPAuxNav.static[href*='sim-national']").insertBefore("#MPSearchBlock");
     setNews(newsTheme);
     setEvents(eventsTheme);
     setDiscussions(discussionsTheme);
