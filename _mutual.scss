@@ -36,6 +36,11 @@
     > .row-full:first-child .ContentItemHtml{
         padding: 0px !important;
         max-width: 100%;
+
+        &.center-block{
+            max-width: 1200px;
+            margin:90px auto;    
+        }
     }
 }
 

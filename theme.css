@@ -1382,6 +1382,9 @@ div#MPFooterLink {
 .home #MainCopy_ContentWrapper > .row-full:first-child .ContentItemHtml {
   padding: 0px !important;
   max-width: 100%; }
+  .home #MainCopy_ContentWrapper > .row-full:first-child .ContentItemHtml.center-block {
+    max-width: 1200px;
+    margin: 90px auto; }
 
 .tl-bg-grey {
   width: 100%;
