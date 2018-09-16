@@ -190,7 +190,7 @@ $(document).ready(function () {
     }
     $("#MPOuterHeader .col-md-12:first").wrap("<div class='row row-wide clearfix headrow'></div>");
     $("#NAV").insertAfter("#Logo");
-    $("a.level1.MPAuxNav.static[href*='sim-national']").insertBefore("#MPSearchBlock");
+    //$("a.level1.MPAuxNav.static[href*='sim-national']").insertBefore("#MPSearchBlock");
     setNews(newsTheme);
     setEvents(eventsTheme);
     setDiscussions(discussionsTheme);
