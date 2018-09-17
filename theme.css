@@ -1379,12 +1379,13 @@ div#MPFooterLink {
   margin: auto;
   padding: 75px 15px !important;
   max-width: 1200px; }
-.home #MainCopy_ContentWrapper > .row-full:first-child .ContentItemHtml {
+.home #MainCopy_ContentWrapper > .row-full .ContentItemHtml:after {
+  content: "";
+  display: block;
+  clear: both; }
+.home #MainCopy_ContentWrapper > .row-full:first-child .ContentItemHtml:not(.center-block) {
   padding: 0px !important;
   max-width: 100%; }
-  .home #MainCopy_ContentWrapper > .row-full:first-child .ContentItemHtml.center-block {
-    max-width: 1200px;
-    margin: 90px auto; }
 
 .tl-bg-grey {
   width: 100%;

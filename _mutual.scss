@@ -33,14 +33,15 @@
         padding: 75px 15px !important;
         max-width: 1200px;
     }
-    > .row-full:first-child .ContentItemHtml{
+
+    > .row-full .ContentItemHtml:after{
+        content: "";
+        display: block;
+        clear: both;
+    }
+    > .row-full:first-child .ContentItemHtml:not(.center-block){
         padding: 0px !important;
         max-width: 100%;
-
-        &.center-block{
-            max-width: 1200px;
-            margin:90px auto;    
-        }
     }
 }
 
