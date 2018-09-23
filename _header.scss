@@ -15,11 +15,9 @@
             display: block;
             content: '';
         }
-
         /*.LogoImg.inline img.img-responsive {
             width: 160px;
         }*/
-
         div#pnlCommunityTags {
             position: fixed;
             top: 65px;
@@ -174,14 +172,20 @@
         }
 
         a.level1.MPAuxNav.static {
-            position: absolute;
+            position: relative;
+            left: initial;
+            top: initial;
             font-weight: bold;
-            left: -85px;
-            top: 8px;
             text-decoration: none;
             color: #156399;
             font-family: 'Roboto', sans-serif;
             outline: 0;
+            margin: 0;
+            margin: 0 6px;
+
+            &:last-child {
+                border: 0;
+            }
 
             &[href*='sim-national'] {
                 left: -185px;
@@ -235,7 +239,7 @@
         background: #fff;
         padding: 10px 0 0 0;
         position: relative;
-        
+
         &:before {
             position: absolute;
             top: 0;
@@ -246,11 +250,9 @@
             display: block;
             content: '';
         }
-
         /*.LogoImg.inline img.img-responsive {
             width: 160px;
         }*/
-
         div#pnlCommunityTags {
             position: fixed;
             top: 65px;
