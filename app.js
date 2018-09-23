@@ -182,7 +182,7 @@ function setFooter(footerTheme) {
 }
 
 $(document).ready(function () {
-    $("#MPAuxNav").closest(".pull-right").removeClass("pull-right").addClass("text-center").insertAfter("#MPCopyright");
+    //$("#MPAuxNav").closest(".pull-right").removeClass("pull-right").addClass("text-center").insertAfter("#MPCopyright");
     $("#MPOuterFooter").addClass("row-full").insertAfter("#MPOuterMost");
     $("#MPOuterHeader").addClass("row-full").insertBefore("#MPOuterMost");
     if ($("body").hasClass("home")) {
