@@ -882,11 +882,16 @@ div#MPFooterLink {
   top: initial;
   font-weight: bold;
   text-decoration: none;
-  color: #156399;
   font-family: 'Roboto', sans-serif;
   outline: 0;
-  margin: 0;
-  margin: 0 6px; }
+  margin: 0 6px;
+  background-color: #156399;
+  border: 0;
+  border-radius: 0;
+  color: white !important;
+  font-size: 14px;
+  text-transform: uppercase;
+  padding: 7px 35px; }
   .header-1 #MPheader a.level1.MPAuxNav.static:last-child {
     border: 0; }
   .header-1 #MPheader a.level1.MPAuxNav.static[href*='sim-national'] {
@@ -1369,6 +1374,9 @@ div#MPFooterLink {
 #ProfileContainer .panel-body .col-md-9.col-sm-9.col-xs-9 div {
   overflow: hidden;
   text-overflow: ellipsis; }
+
+#auxskiplink {
+  left: -5000px; }
 
 .chapter-news, .chapter-events {
   position: relative;
