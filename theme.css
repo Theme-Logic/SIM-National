@@ -2223,11 +2223,18 @@ div#MPFooterLink {
     padding-bottom: 65px; }
     @media screen and (max-width: 767px) {
       .home-col-4 .HtmlContent > div {
-        width: 100%; } }
+        width: 100%;
+        margin-top: 30px; } }
+    .home-col-4 .HtmlContent > div h2 {
+      margin-top: 0; }
     .home-col-4 .HtmlContent > div a.btn {
       position: absolute;
-      bottom: 15px;
-      right: 15px; }
+      bottom: 0;
+      left: 0; }
+      @media screen and (min-width: 768px) {
+        .home-col-4 .HtmlContent > div a.btn {
+          left: 10px;
+          right: 10px; } }
   @media screen and (min-width: 768px) and (max-width: 991px) {
     .home-col-4 .HtmlContent > div + div + div {
       margin-top: 50px; }
@@ -2235,16 +2242,19 @@ div#MPFooterLink {
       content: "";
       display: block;
       position: absolute;
-      border-left: 1px solid #ccc;
+      border-left: 1px solid #f0f0f0;
+      border-right: 1px solid #ccc;
       top: 0;
       bottom: 0;
-      left: 0; } }
+      left: 0;
+      width: 1px; } }
   @media screen and (min-width: 992px) {
     .home-col-4 .HtmlContent > div + div:before {
       content: "";
       display: block;
       position: absolute;
-      border-left: 1px solid #ccc;
+      border-left: 1px solid #f0f0f0;
+      border-right: 1px solid #ccc;
       top: 0;
       bottom: 0;
       left: 0; } }
