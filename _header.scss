@@ -115,7 +115,7 @@
         }
 
         .search-sign-up-wrapper {
-            width: 500px;
+            width: 460px;
         }
 
         #searchColumn {
@@ -218,7 +218,6 @@
             display: inline-block;
             float: right;
             position: relative;
-            top: 25px;
             right: 25px;
         }
 
@@ -231,6 +230,12 @@
             font-weight: bold;
             text-transform: uppercase;
             padding: 7px 35px;
+        }
+
+        > .row:first-child{
+            position: relative;
+            top: 30px;
+            padding-bottom: 30px;
         }
     }
 
@@ -953,4 +958,19 @@
 }
 #auxskiplink{
   left: -5000px;
+}
+#MPAuxNav {
+    display: block;
+
+    * {
+        float: none !important;
+    }
+
+    ul {
+        list-style: none;
+
+        li {
+            display: inline-block;
+        }
+    }
 }

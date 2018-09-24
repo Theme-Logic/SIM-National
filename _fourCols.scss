@@ -1,0 +1,57 @@
+  .home-col-4 .HtmlContent{
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	position: relative;
+	
+	> div{
+		position: relative;
+		padding-bottom: 65px;
+
+		@media screen and (max-width: 767px){
+			width: 100%;
+		}
+
+		a.btn{
+			position: absolute;
+			bottom: 15px;
+			right: 15px;
+		}
+	}
+
+  	@media screen and (min-width: 768px) and (max-width: 991px){
+  		> div + div + div{
+			margin-top: 50px;
+  		}
+		> div:nth-child(2n+2){
+
+			&:before{
+				content: "";
+				display: block;
+				position: absolute;
+				border-left: 1px solid #ccc;
+				top: 0;
+				bottom: 0;
+				left: 0;
+
+			}
+		}
+  		
+  	}
+  	@media screen and (min-width: 992px){
+		> div + div{
+
+			&:before{
+				content: "";
+				display: block;
+				position: absolute;
+				border-left: 1px solid #ccc;
+				top: 0;
+				bottom: 0;
+				left: 0;
+
+			}
+		}
+  	}
+
+}

@@ -2,18 +2,6 @@
 .col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12 {
   min-height: 0; }
 
-#MPAuxNav {
-  display: block;
-  position: absolute;
-  top: 32px;
-  left: 50px; }
-  #MPAuxNav * {
-    float: none !important; }
-  #MPAuxNav ul {
-    list-style: none; }
-    #MPAuxNav ul li {
-      display: inline-block; }
-
 body {
   font-family: 'Arimo', sans-serif !important; }
 
@@ -842,7 +830,7 @@ div#MPFooterLink {
           border: 0;
           background: transparent; }
   .header-1 #MPOuterHeader .search-sign-up-wrapper {
-    width: 500px; }
+    width: 460px; }
   .header-1 #MPOuterHeader #searchColumn {
     max-width: 300px;
     width: 100%; }
@@ -913,7 +901,6 @@ div#MPFooterLink {
   display: inline-block;
   float: right;
   position: relative;
-  top: 25px;
   right: 25px; }
 .header-1 #MPheader a#Welcome_LoginLink {
   background: linear-gradient(to right, #156399, #1e7ca8);
@@ -924,6 +911,10 @@ div#MPFooterLink {
   font-weight: bold;
   text-transform: uppercase;
   padding: 7px 35px; }
+.header-1 #MPheader > .row:first-child {
+  position: relative;
+  top: 30px;
+  padding-bottom: 30px; }
 .header-1 .headrow {
   position: relative; }
 
@@ -1377,6 +1368,15 @@ div#MPFooterLink {
 
 #auxskiplink {
   left: -5000px; }
+
+#MPAuxNav {
+  display: block; }
+  #MPAuxNav * {
+    float: none !important; }
+  #MPAuxNav ul {
+    list-style: none; }
+    #MPAuxNav ul li {
+      display: inline-block; }
 
 .chapter-news, .chapter-events {
   position: relative;
@@ -2213,6 +2213,42 @@ div#MPFooterLink {
     margin-top: 0; }
   .header-3 #MPheader .HLWelcome.HLWelcomeHeader {
     display: none; } }
+.home-col-4 .HtmlContent {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  position: relative; }
+  .home-col-4 .HtmlContent > div {
+    position: relative;
+    padding-bottom: 65px; }
+    @media screen and (max-width: 767px) {
+      .home-col-4 .HtmlContent > div {
+        width: 100%; } }
+    .home-col-4 .HtmlContent > div a.btn {
+      position: absolute;
+      bottom: 15px;
+      right: 15px; }
+  @media screen and (min-width: 768px) and (max-width: 991px) {
+    .home-col-4 .HtmlContent > div + div + div {
+      margin-top: 50px; }
+    .home-col-4 .HtmlContent > div:nth-child(2n+2):before {
+      content: "";
+      display: block;
+      position: absolute;
+      border-left: 1px solid #ccc;
+      top: 0;
+      bottom: 0;
+      left: 0; } }
+  @media screen and (min-width: 992px) {
+    .home-col-4 .HtmlContent > div + div:before {
+      content: "";
+      display: block;
+      position: absolute;
+      border-left: 1px solid #ccc;
+      top: 0;
+      bottom: 0;
+      left: 0; } }
+
 /* OVERRIDES TO WORK INTO SCSS */
 .sponsors-1 .sponsors h2 {
   text-align: left;

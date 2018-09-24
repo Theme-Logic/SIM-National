@@ -2,21 +2,3 @@
     min-height: 0;
 }
 
-#MPAuxNav {
-    display: block;
-    position: absolute;
-    top: 32px;
-    left: 50px;
-
-    * {
-        float: none !important;
-    }
-
-    ul {
-        list-style: none;
-
-        li {
-            display: inline-block;
-        }
-    }
-}
