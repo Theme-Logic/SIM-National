@@ -253,6 +253,4 @@ $(document).ready(function () {
     initBlogImg();
 });
 
-
-
-   'trends.simnet.org', 'mit.simnet.org'];
+ 
