@@ -200,15 +200,15 @@ $(document).ready(function () {
     setHeader(headerTheme);
     setLogos(logosTheme);
     $("#MPOuterHeader").insertBefore("#MasterPageForm .aspNetHidden:first");
-	// HIDE REFRESH CONTACT INFO ON OTHER PROFILES 
-	if( !$('[id*="upnlProfileImage"] .btn-group').length){$('.tl-update-contact').hide();}
+    // HIDE REFRESH CONTACT INFO ON OTHER PROFILES 
+    if (!$('[id*="upnlProfileImage"] .btn-group').length) { $('.tl-update-contact').hide(); }
     // SET GREY BACKGROUND SECTIONS FOR HOMEPAGE
-    $('.home .bg-grey').each(function(){
+    $('.home .bg-grey').each(function () {
         //console.log($(this).closest('#MainCopy_ContentWrapper .row-wide').length);
-        if( $(this).closest('#MainCopy_ContentWrapper .row-full').length){
+        if ($(this).closest('#MainCopy_ContentWrapper .row-full').length) {
             $(this).wrap('<div class="tl-bg-grey">');
         }
-        if( $(this).closest('#MainCopy_ContentWrapper .row-wide').length){
+        if ($(this).closest('#MainCopy_ContentWrapper .row-wide').length) {
             $(this).closest('#MainCopy_ContentWrapper .row-wide').addClass('tl-bg-grey');
         }
     })
@@ -218,8 +218,8 @@ $(window).on('load', function () {
     $('#status').fadeOut();
     $('.simnet-preloader').fadeOut('slow');
     // EVENTS OPEN IN NEW TAB
-    $('.chapter-events h3 a').attr('target','_blank');
-    $('.HLEventList h3 a').attr('target','_blank');
+    $('.chapter-events h3 a').attr('target', '_blank');
+    $('.HLEventList h3 a').attr('target', '_blank');
 
 });
 
@@ -228,10 +228,11 @@ $(window).on('load', function () {
 function initBlogImg() {
     var domain = document.domain,
             domainArray = ['chapter.simnet.org'
-                            ,'national.simnet.org'
-                            ,'program.simnet.org'
-                            ,'www.simnet.org'
-                            ,'simnet.org'];
+                            , 'national.simnet.org'
+                            , 'program.simnet.org'
+                            , 'www.simnet.org'
+                            , 'simnet.org',
+            'trends.simnet.org', 'mit.simnet.org'];
     if ($.inArray(domain, domainArray) != -1) {
         $('.tl-blog li h3 a').each(function () {
             var tlBlogLink = $(this).attr("href").replace("chapter.simnet.org", "national.simnet.org") + ' .blogs-block img:first';
