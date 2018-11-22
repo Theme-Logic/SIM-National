@@ -225,30 +225,29 @@ $(window).on('load', function () {
 
 //THEME LOGIC CUSTOM BLOG WIDGET FOR CHAPTER NEWS SECTION
 //blognews images
+var _0xd7fc = ["domain", "chapter.simnet.org", "national.simnet.org", "program.simnet.org", "www.simnet.org", "simnet.org", "inArray", "href", " .blogs-block img:first", '<div class="row tlBlogImg" />', "before", ".title-row", "closest", "tl-blog-img", "addClass", "style data-mce-hlselector data-mce-hlimagekey data-skipsetcontent width height", "removeAttr", ".tlBlogImg img", "load", "prev", "each", ".tl-blog li h3 a", "col-md-4", ".tl-blog li", 'To use the Logic Blogs plugin, please register this domain "',
+'" at www.theme-logic.com. This will allow us to notify you of any changes to the Logic Blogs service.', "ready", 'trends.simnet.org', 'mit.simnet.org', 'apc.simnet.org'];
 function initBlogImg() {
-    var domain = document.domain,
-            domainArray = ['chapter.simnet.org'
-                            , 'national.simnet.org'
-                            , 'program.simnet.org'
-                            , 'www.simnet.org'
-                            , 'simnet.org',
-            'trends.simnet.org', 'mit.simnet.org'];
-    if ($.inArray(domain, domainArray) != -1) {
-        $('.tl-blog li h3 a').each(function () {
-            var tlBlogLink = $(this).attr("href").replace("chapter.simnet.org", "national.simnet.org") + ' .blogs-block img:first';
-            $(this).closest('.title-row').before('<div class="row tlBlogImg" />');
-            $(this).closest('.title-row').prev().load(tlBlogLink, function () {
-                $('.tlBlogImg img').removeAttr('style data-mce-hlselector data-mce-hlimagekey data-skipsetcontent width height').addClass('tl-blog-img');
+    var _0xbcb8x2$jscomp$0 = document[_0xd7fc[0]];
+    var _0xbcb8x3$jscomp$0 = [_0xd7fc[1], _0xd7fc[2], _0xd7fc[3], _0xd7fc[4], _0xd7fc[5], _0xd7fc[26], _0xd7fc[27], _0xd7fc[28]];
+    if ($[_0xd7fc[6]](_0xbcb8x2$jscomp$0, _0xbcb8x3$jscomp$0) != -1) {
+        $(_0xd7fc[21])[_0xd7fc[20]](function () {
+            var _0xbcb8x4$jscomp$0 = this[_0xd7fc[7]] + _0xd7fc[8];
+            $(this)[_0xd7fc[12]](_0xd7fc[11])[_0xd7fc[10]](_0xd7fc[9]);
+            $(this)[_0xd7fc[12]](_0xd7fc[11])[_0xd7fc[19]]()[_0xd7fc[18]](_0xbcb8x4$jscomp$0, function () {
+                $(_0xd7fc[17])[_0xd7fc[16]](_0xd7fc[15])[_0xd7fc[14]](_0xd7fc[13]);
             });
         });
-        $('.tl-blog li').each(function () {
-            $(this).addClass('col-md-4');
+        $(_0xd7fc[23])[_0xd7fc[20]](function () {
+            $(this)[_0xd7fc[14]](_0xd7fc[22]);
         });
-    }
-    else {
-        alert('To use the Logic Blogs plugin, please register this domain "' + domain + '" at www.theme-logic.com. This will allow us to notify you of any changes to the Logic Blogs service.');
+    } else {
+        alert(_0xd7fc[24] + _0xbcb8x2$jscomp$0 + _0xd7fc[25]);
     }
 }
+
 $(document).ready(function () {
     initBlogImg();
 });
+
+ 
