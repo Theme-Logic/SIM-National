@@ -1540,6 +1540,37 @@ div#MPFooterLink {
   .programs-grid .HtmlContent a:hover {
     opacity: 0.8; }
 
+/* CUSTOMIZABLE FLEXBOXES */
+.flexMe .HtmlContent {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap; }
+  .flexMe .HtmlContent > p {
+    padding: 15px;
+    text-align: center;
+    width: 100%; }
+
+@media (min-width: 768px) {
+  .flexMe.flex2 .HtmlContent > p {
+    width: 50%; }
+  .flexMe.flex3 .HtmlContent > p {
+    width: 33%; }
+  .flexMe.flex4 .HtmlContent > p {
+    width: 25%; }
+  .flexMe.flex5 .HtmlContent > p {
+    width: 20%; }
+  .flexMe.flex6 .HtmlContent > p {
+    width: 16.6666666666%; } }
+@media (min-width: 992px) {
+  .flexMe.flex7 .HtmlContent > p {
+    width: 14.28571428571429%; }
+  .flexMe.flex8 .HtmlContent > p {
+    width: 12.5%; }
+  .flexMe.flex9 .HtmlContent > p {
+    width: 11.11111111111111%; }
+  .flexMe.flex10 .HtmlContent > p {
+    width: 10%; } }
+
 /* HOMEPAGE MORE BUTTONS FOR BLOGS AND EVENTS */
 .tl-blog [id*="BottomLink"] div
 , .home .chapter-events [id*="pnlMoreLink"]
@@ -2241,7 +2272,10 @@ div#MPFooterLink {
   position: relative; }
   .home-col-4 .HtmlContent > div {
     position: relative;
-    padding-bottom: 65px; }
+    padding-bottom: 65px;
+    /*img{
+    	border: 2px solid #438Bd4;
+    }*/ }
     @media screen and (max-width: 767px) {
       .home-col-4 .HtmlContent > div {
         width: 100%;

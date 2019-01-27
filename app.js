@@ -212,6 +212,7 @@ $(document).ready(function () {
             $(this).closest('#MainCopy_ContentWrapper .row-wide').addClass('tl-bg-grey');
         }
     })
+    $('.tl-priv-pol a').appendTo('.tl-priv-pol + div .col-md-4:nth-child(2) p:first-child');
 })
 
 $(window).on('load', function () {
