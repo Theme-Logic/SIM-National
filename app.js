@@ -181,6 +181,17 @@ function setFooter(footerTheme) {
     $("body").addClass("footer-" + footerTheme);
 }
 
+function migrateSubDomain(){
+    $('a[href*="national.simnet.org"]').each(function(){
+        var newSubAndDomain = "www.simnet.org";
+        var oldSubAndDomain = "national.simnet.org";
+        var curHref = $(this).attr('href').toLowerCase();
+        var newHref = curHref.replace(oldSubAndDomain,newSubAndDomain);
+        $(this).attr('href',newHref);
+    });
+};
+
+
 $(document).ready(function () {
     //$("#MPAuxNav").closest(".pull-right").removeClass("pull-right").addClass("text-center").insertAfter("#MPCopyright");
     $("#MPOuterFooter").addClass("row-full").insertAfter("#MPOuterMost");
@@ -191,6 +202,7 @@ $(document).ready(function () {
     $("#MPOuterHeader .col-md-12:first").wrap("<div class='row row-wide clearfix headrow'></div>");
     $("#NAV").insertAfter("#Logo");
     $("a.level1.MPAuxNav.static[href*='sim-national']").insertBefore("#MPSearchBlock");
+    migrateSubDomain();
     setNews(newsTheme);
     setEvents(eventsTheme);
     setDiscussions(discussionsTheme);
@@ -227,28 +239,31 @@ $(window).on('load', function () {
 //THEME LOGIC CUSTOM BLOG WIDGET FOR CHAPTER NEWS SECTION
 //blognews images
 function initBlogImg() {
-    var domain = document.domain,
+    /*var domain = document.domain,
             domainArray = ['chapter.simnet.org'
                             , 'national.simnet.org'
                             , 'program.simnet.org'
                             , 'www.simnet.org'
-                            , 'simnet.org',
-            'trends.simnet.org', 'mit.simnet.org', 'asc.simnet.org'];
-    if ($.inArray(domain, domainArray) != -1) {
+                            , 'simnet.org'
+                            , 'trends.simnet.org'
+                            , 'mit.simnet.org'
+                            , 'asc.simnet.org'
+                            , 'apc.simnet.org';
+    if ($.inArray(domain, domainArray) != -1) { */
         $('.tl-blog li h3 a').each(function () {
             var tlBlogLink = "https://" + $(this).attr("href").replace(/^[^.]*/, 'national') + ' .blogs-block img:first';
             $(this).closest('.title-row').before('<div class="row tlBlogImg" />');
             $(this).closest('.title-row').prev().load(tlBlogLink, function () {
-                $('.tlBlogImg img').removeAttr('style data-mce-hlselector data-mce-hlimagekey data-skipsetcontent width height').addClass('tl-blog-img');
+                $('.tlBlogImg .col-md-8 img').removeAttr('style data-mce-hlselector data-mce-hlimagekey data-skipsetcontent width height').addClass('tl-blog-img');
             });
         });
         $('.tl-blog li').each(function () {
             $(this).addClass('col-md-4');
         });
-    }
+    /*}
     else {
         alert('To use the Logic Blogs plugin, please register this domain "' + domain + '" at www.theme-logic.com. This will allow us to notify you of any changes to the Logic Blogs service.');
-    }
+    }*/
 }
 $(document).ready(function () {
     initBlogImg();
