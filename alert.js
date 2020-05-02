@@ -1,0 +1,3 @@
+$(document).ready(function(){
+	$('#MPOuterHeader').prepend('<div class="alert alert-warning" role="alert"><h3>Tech Platform Migration Notice 2020</h3><p>SIM is migrating to our new technology platform beginning Wednesday, April 29th through Wednesday, May 6th.  During this transition window, you may experience limited functionality on the chapter and national pages.<br />Please contact sim@simnet.org or call 800.387.9746 for assistance during this period of time.</p></div>');
+})
