@@ -1,5 +1,5 @@
 /* REWRITES FONTEVA PROFILE LINKS TO YM PROFILE LINKS */
 $(document).ready(function(){
-	$('a[href*="a0df4000000EvkkAAC"]:contains(Update Contact Information)').attr('href','https://members.simnet.org/members/edit.asp');
-	$('a[href*="renew-redirect"], a[href*="a0df4000000EvkkAAC"]').attr('href','https://members.simnet.org/members/manage_profile.asp');
+	$('a[href*="CPBase__profile"]:contains(Update Contact Information)').attr('href','https://members.simnet.org/members/edit.asp');
+	$('a[href*="renew-redirect"], a[href*="CPBase__profile"]').attr('href','https://members.simnet.org/members/manage_profile.asp');
 });
