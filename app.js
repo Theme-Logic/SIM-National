@@ -214,7 +214,11 @@ $(document).ready(function () {
     $("#MPOuterHeader").insertBefore("#MasterPageForm .aspNetHidden:first");
     // HIDE REFRESH CONTACT INFO ON OTHER PROFILES 
     if (!$('[id*="upnlProfileImage"] .btn-group').length) { $('.tl-update-contact').hide(); }
-    // SET GREY BACKGROUND SECTIONS FOR HOMEPAGE
+     // ADD "MANAGE MEMBERSHIP" BUTTON TO THE USER'S PROFILE
+    if ($('[id*="upnlProfileImage"] .btn-group').length) {
+        $('ul[id*="ProfileTabList"]').parent('.ContentUserControl').before('<p style="margin: 15px 0;"><a href="https://members.simnet.org/members/manage_profile.asp" class="btn btn-default btn-block btn-lg">Access YourMembership</a></p>');
+    }
+   // SET GREY BACKGROUND SECTIONS FOR HOMEPAGE
     $('.home .bg-grey').each(function () {
         //console.log($(this).closest('#MainCopy_ContentWrapper .row-wide').length);
         if ($(this).closest('#MainCopy_ContentWrapper .row-full').length) {
