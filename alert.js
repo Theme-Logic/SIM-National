@@ -1,3 +1,3 @@
-$(document).ready(function(){
+/*$(document).ready(function(){
 	$('#MPOuterHeader').prepend('<div class="alert alert-warning" role="alert"><h3 style="font-weight: bold;">Tech Platform Migration Notice 2020</h3><p>SIM has migrated to a new technology platform as of Wednesday, May 6th. Active members have been emailed an invitation to reset their passwords.</p><p>Please contact <a href="mailto:sim@simnet.org">sim@simnet.org</a> or call 800.387.9746 if you have any questions or need assistance.</p></div>');
-});
+});*/
