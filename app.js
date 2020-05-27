@@ -271,6 +271,8 @@ function initBlogImg() {
 }
 $(document).ready(function () {
     initBlogImg();
+    //UPDATE PRIVACY POLICY LINK
+    $('a[href*="/SIMNET/eb5410ec-81da-4dd4-846f-1d2d08fd6cb2/UploadedImages/shared/SIM-Privacy-Policy.pdf"]').attr('href','https://higherlogicdownload.s3.amazonaws.com/SIMNET/45b704b6-f99d-43dd-86ba-060ea837cc75/UploadedImages/SIM-Privacy-Policy.pdf');
 });
 
  
