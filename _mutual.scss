@@ -32,6 +32,11 @@
         margin: auto;
         padding: 75px 15px !important;
         max-width: 1200px;
+
+        &.just-heading{
+            padding-bottom: 0px !important;
+            margin-bottom: -50px;
+        }
     }
     > .row-full .ContentItemHtml .btn{
         background: #c1d22a;
